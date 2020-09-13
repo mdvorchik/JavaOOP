@@ -1,6 +1,6 @@
 package shapes.math;
 
-abstract class Shape {
+abstract class AbstractShape {
     double area;
 
     abstract double computeArea();

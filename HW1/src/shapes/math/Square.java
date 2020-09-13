@@ -1,6 +1,6 @@
 package shapes.math;
 
-public class Square extends Shape{
+public class Square extends AbstractShape {
 
     private double lengthOfSide;
 

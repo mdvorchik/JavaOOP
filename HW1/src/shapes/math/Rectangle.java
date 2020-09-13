@@ -1,6 +1,6 @@
 package shapes.math;
 
-public class Rectangle extends Shape{
+public class Rectangle extends AbstractShape {
 
     private double length;
     private double width;

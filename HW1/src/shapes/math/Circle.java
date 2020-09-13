@@ -1,6 +1,6 @@
 package shapes.math;
 
-public class Circle extends Shape{
+public class Circle extends AbstractShape {
 
     private double radius;
 
