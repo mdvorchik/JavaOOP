@@ -1,4 +1,4 @@
-package main.java.shapes.math;
+package shapes.math;
 
 import org.junit.Assert;
 import org.junit.Test;

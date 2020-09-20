@@ -1,18 +1,18 @@
-package main.java.shapes.math;
+package shapes.math;
 
 import org.junit.Assert;
 import org.junit.Test;
 import shapes.exceptions.NegativeSizeOfTheShapeParameterException;
-import shapes.math.Square;
+import shapes.math.Circle;
 
 import static org.junit.Assert.*;
 
-public class SquareTest {
+public class CircleTest {
 
     @Test(expected = NegativeSizeOfTheShapeParameterException.class)
     public void circleConstructor() throws NegativeSizeOfTheShapeParameterException {
-        Square square = new Square(-1);
-        square.computeArea();
+        Circle circle = new Circle(-1);
+        circle.computeArea();
     }
 
     @Test
@@ -20,8 +20,8 @@ public class SquareTest {
         for (int i = 0; i < 1000; ++i) {
             double testData = Math.random() * 1000.;
             double delta = 0.001;
-            Square square = new Square(testData);
-            Assert.assertEquals(testData*testData, square.computeArea(), delta);
+            Circle circle = new Circle(testData);
+            Assert.assertEquals(testData*testData*Math.PI, circle.computeArea(), delta);
         }
     }
 }
