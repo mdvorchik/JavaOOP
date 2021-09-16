@@ -5,7 +5,7 @@ public class Rectangle implements AreaComputable {
     private final double length;
     private final double width;
 
-    public Rectangle(double length, double width) throws IllegalArgumentException {
+    public Rectangle(double length, double width) {
         if (length < 0 || width < 0) {
             throw new IllegalArgumentException();
         }

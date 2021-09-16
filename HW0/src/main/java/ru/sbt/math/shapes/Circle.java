@@ -4,7 +4,7 @@ public class Circle implements AreaComputable {
 
     private final double radius;
 
-    public Circle(double radius) throws IllegalArgumentException {
+    public Circle(double radius) {
         if (radius < 0) {
             throw new IllegalArgumentException();
         }

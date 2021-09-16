@@ -4,7 +4,7 @@ public class Square implements AreaComputable {
 
     private final double lengthOfSide;
 
-    public Square(double lengthOfSide) throws IllegalArgumentException {
+    public Square(double lengthOfSide) {
         if (lengthOfSide < 0) {
             throw new IllegalArgumentException();
         }
