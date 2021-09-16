@@ -1,10 +1,11 @@
-import shapes.exceptions.NegativeSizeOfTheShapeParameterException;
-import shapes.math.Circle;
-import shapes.math.Rectangle;
-import shapes.math.Square;
+package ru.sbt.math;
+
+import ru.sbt.math.shapes.Circle;
+import ru.sbt.math.shapes.Rectangle;
+import ru.sbt.math.shapes.Square;
 
 public class Main {
-    public static void main(String[] args) throws NegativeSizeOfTheShapeParameterException {
+    public static void main(String[] args) {
         Rectangle rect = new Rectangle(2, 3);
         Square sq = new Square(5);
         Circle circle = new Circle(2);
