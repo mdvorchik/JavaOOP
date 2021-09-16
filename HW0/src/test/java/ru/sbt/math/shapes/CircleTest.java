@@ -7,12 +7,12 @@ import static org.junit.Assert.assertEquals;
 public class CircleTest {
 
     @Test(expected = IllegalArgumentException.class)
-    public void circleConstructorWithIllegalArgument() throws IllegalArgumentException {
+    public void circleConstructorWithIllegalArgument() {
         new Circle(-1);
     }
 
     @Test
-    public void computeArea() throws IllegalArgumentException {
+    public void computeArea() {
         //given
         double radius = 75.;
         AreaComputable circle = new Circle(radius);

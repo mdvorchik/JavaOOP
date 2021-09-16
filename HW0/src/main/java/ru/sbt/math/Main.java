@@ -5,7 +5,7 @@ import ru.sbt.math.shapes.Rectangle;
 import ru.sbt.math.shapes.Square;
 
 public class Main {
-    public static void main(String[] args) throws IllegalArgumentException {
+    public static void main(String[] args) {
         Rectangle rect = new Rectangle(2, 3);
         Square sq = new Square(5);
         Circle circle = new Circle(2);

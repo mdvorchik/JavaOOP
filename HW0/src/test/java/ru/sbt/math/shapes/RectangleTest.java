@@ -7,22 +7,22 @@ import static org.junit.Assert.assertEquals;
 public class RectangleTest {
 
     @Test(expected = IllegalArgumentException.class)
-    public void circleConstructorWithFirstIllegalArgument() throws IllegalArgumentException {
+    public void circleConstructorWithFirstIllegalArgument() {
         new Rectangle(-1, 2);
     }
 
     @Test(expected = IllegalArgumentException.class)
-    public void circleConstructorWithSecondIllegalArgument() throws IllegalArgumentException {
+    public void circleConstructorWithSecondIllegalArgument() {
         new Rectangle(1, -2);
     }
 
     @Test(expected = IllegalArgumentException.class)
-    public void circleConstructorWithIllegalArguments() throws IllegalArgumentException {
+    public void circleConstructorWithIllegalArguments() {
         new Rectangle(-1, -2);
     }
 
     @Test
-    public void computeArea() throws IllegalArgumentException {
+    public void computeArea() {
         //given
         double length = 5.;
         double width = 4.;
